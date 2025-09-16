@@ -1,6 +1,6 @@
 import { SplinePointer, SquareCode } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
+import { Card, CardContent } from "./ui/card";
 
 export function About() {
   return (
@@ -13,9 +13,8 @@ export function About() {
         <div className="space-y-6">
           <p className="text-lg text-foreground leading-relaxed">
             I'm a <span className="text-primary font-bold">Web Developer</span>{" "}
-            and UI/UX Designer from Bulacan, Philippines! Working in web
-            development. I enjoy turning complex problems into simple, beautiful
-            and intuitive designs.
+            and UI/UX Designer based in Bulacan, Philippines. I turn complex
+            problems into simple, beautiful, and intuitive experiences.
           </p>
 
           <p className="text-lg text-foreground leading-relaxed">
