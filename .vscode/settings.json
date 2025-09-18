@@ -1,0 +1,5 @@
+{
+  "explorer.fileNesting.enabled": false,
+  "markdown.links.openLocation": "currentGroup",
+  "editor.stablePeek": false
+}

@@ -80,7 +80,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <CalendarDays className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
                 Years of experience
               </p>
               <p className="text-xs lg:text-sm font-medium">{experience}</p>
@@ -90,7 +90,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <Layers className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
                 Current Tech Stack
               </p>
               <p className="text-xs lg:text-sm font-medium">
@@ -102,7 +102,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
                 LOCATION
               </p>
               <p className="text-xs lg:text-sm font-medium">{location}</p>

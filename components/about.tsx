@@ -1,4 +1,4 @@
-import { SplinePointer, SquareCode } from "lucide-react";
+import { Megaphone, SplinePointer, SquareCode, Wrench } from "lucide-react";
 import { Avatar, AvatarFallback, AvatarImage } from "./ui/avatar";
 import { Card, CardContent } from "./ui/card";
 
@@ -9,7 +9,7 @@ export function About() {
         About Me
       </h2>
 
-      <div className="grid gap-8">
+      <article className="grid gap-8">
         <div className="space-y-6">
           <p className="text-lg text-foreground leading-relaxed">
             I'm a <span className="text-primary font-bold">Web Developer</span>{" "}
@@ -23,9 +23,14 @@ export function About() {
           </p>
 
           <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-6">
-            <h3 className="text-xl font-bold text-accent-foreground mb-4 uppercase tracking-wide">
-              What I'm Doing
-            </h3>
+            <div className="flex items-center gap-3 mb-6 z-10 relative">
+              <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
+                <Wrench className="h-4 w-4 text-foreground" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+                What I'm Doing
+              </h3>
+            </div>
             <div className="grid sm:grid-cols-2 gap-4">
               <Card className="w-full max-w-sm">
                 <CardContent>
@@ -65,9 +70,14 @@ export function About() {
 
         <div className="space-y-6">
           <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-6">
-            <h3 className="text-xl font-bold text-foreground mb-4 uppercase tracking-wide">
-              Testimonials
-            </h3>
+            <div className="flex items-center gap-3 mb-6 z-10 relative">
+              <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
+                <Megaphone className="h-4 w-4 text-foreground" />
+              </div>
+              <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+                Testimonials
+              </h3>
+            </div>
             <div className="space-y-4">
               <Card className="w-full">
                 <CardContent>
@@ -140,7 +150,7 @@ export function About() {
             </div>
           </div>
         </div>
-      </div>
+      </article>
     </div>
   );
 }

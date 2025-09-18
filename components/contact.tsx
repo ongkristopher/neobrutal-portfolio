@@ -46,7 +46,7 @@ export function Contact() {
             </div>
           </div>
 
-          <div className="bg-primary neo-shadow p-6 text-primary-foreground">
+          <div className="bg-primary neo-shadow p-6 ww">
             <h3 className="text-lg font-bold mb-3 uppercase tracking-wide">Response Time</h3>
             <p className="text-sm mb-4">I typically respond within 24 hours during business days.</p>
             <div className="flex gap-2">
