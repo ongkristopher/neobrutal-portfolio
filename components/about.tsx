@@ -83,33 +83,6 @@ export function About() {
                 <CardContent>
                   <div className="flex items-center gap-3 mb-3">
                     <Avatar>
-                      <AvatarImage
-                        src="/Rikard_web-768x768.jpg.webp"
-                        alt="Rikard Windh"
-                      />
-                      <AvatarFallback>RK</AvatarFallback>
-                    </Avatar>
-                    <div>
-                      <h4 className="font-bold text-foreground">
-                        Rikard Windh
-                      </h4>
-                      <p className="text-sm text-muted-foreground">
-                        COO, Traxmate
-                      </p>
-                    </div>
-                  </div>
-                  <p className="text-sm text-foreground">
-                    "Kristopher has helped us a lot with front-end work in the
-                    Traxmate product and in the Combain Indoor. New Alert Edit
-                    for example. Alert Types page. Building model pages and
-                    Survey Pages. Kristopher was also part of the design team."
-                  </p>
-                </CardContent>
-              </Card>
-              <Card className="w-full">
-                <CardContent>
-                  <div className="flex items-center gap-3 mb-3">
-                    <Avatar>
                       <AvatarImage src="/extel-logo.svg" alt="Extel Insights" />
                       <AvatarFallback>EI</AvatarFallback>
                     </Avatar>
@@ -145,6 +118,33 @@ export function About() {
                       </p>
                     </div>
                   </div>
+                </CardContent>
+              </Card>
+              <Card className="w-full">
+                <CardContent>
+                  <div className="flex items-center gap-3 mb-3">
+                    <Avatar>
+                      <AvatarImage
+                        src="/Rikard_web-768x768.jpg.webp"
+                        alt="Rikard Windh"
+                      />
+                      <AvatarFallback>RK</AvatarFallback>
+                    </Avatar>
+                    <div>
+                      <h4 className="font-bold text-foreground">
+                        Rikard Windh
+                      </h4>
+                      <p className="text-sm text-muted-foreground">
+                        COO, Traxmate
+                      </p>
+                    </div>
+                  </div>
+                  <p className="text-sm text-foreground">
+                    "Kristopher has helped us a lot with front-end work in the
+                    Traxmate product and in the Combain Indoor. New Alert Edit
+                    for example. Alert Types page. Building model pages and
+                    Survey Pages. Kristopher was also part of the design team."
+                  </p>
                 </CardContent>
               </Card>
             </div>
