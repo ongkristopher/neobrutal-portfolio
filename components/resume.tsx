@@ -1,56 +1,12 @@
-import { BookOpen, GraduationCap } from "lucide-react";
-import { Card, CardContent } from "./ui/card";
+import { BookOpen } from "lucide-react";
+import { experiences } from "@/data/experiences";
+// import { GraduationCap } from "lucide-react";
+// import { Card, CardContent } from "./ui/card";
 
 export function Resume() {
-  const experiences = [
-    {
-      company: "Arcanys",
-      duration: "September 2021 - Present",
-      position: "Senior Web Developer",
-      tasks: [
-        "Developed various UI pages for our client's web application",
-        "Collaborated with cross-functional teams to implement new features and improve user experience.",
-        "Contributed to client's web app designs in terms of creating mockups",
-        "Participated in peer reviews and code reviews",
-      ],
-    },
-    {
-      company: "Northeast Business Solutions, Inc",
-      duration: "December 2017 - September 2021",
-      position: "Senior Web Developer",
-      tasks: [
-        "Developed a maintainable RESTful APIs using NodeJS (express.js)",
-        "Developed and maintained existing web pages develop in different front-end solution architecture (Web forms, MVC, Angular, Bootstrap, jQuery)",
-        "Created and enhanced existing Stored Procedures on MySQL",
-        "Developed emergency patch or hot fixes when issue arises",
-        "Implemented Google Analytics on our website",
-        "Developed company website",
-      ],
-    },
-    {
-      company: "Forthmedia Interactive Development",
-      duration: "May 2017 - November 2021",
-      position: "Junior Web Developer",
-      tasks: [
-        "Developed and maintained existing web pages develop in different front-end solution architecture (Web forms, MVC, Bootstrap, jQuery)",
-        "Created and enhanced existing designs for client's website",
-        "Developed emergency patch or hot fixes when issue arises",
-        "Implemented Google Analytics on our website",
-      ],
-    },
-    {
-      company: "Edukasyon.ph",
-      duration: "April 2016 - June 2016",
-      position: "Junior Web Developer (Intern)",
-      tasks: [
-        "Assisted developers in creating mock-ups",
-        "Trained to be a front-end designer. Used to convert .psd files into HTML & CSS files",
-      ],
-    },
-  ];
   return (
     <div>
-      <h2 className="text-4xl font-bold text-card-foreground mb-8 uppercase tracking-wide">
+      <h2 className="text-4xl font-bold text-card-foreground mb-8 uppercase">
         Resume
       </h2>
 
@@ -67,7 +23,7 @@ export function Resume() {
           <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
             <BookOpen className="h-4 w-4 text-foreground" />
           </div>
-          <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+          <h3 className="text-xl font-bold text-foreground uppercase">
             Experience
           </h3>
         </div>
@@ -105,7 +61,7 @@ export function Resume() {
             <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
               <GraduationCap className="h-4 w-4 text-foreground" />
             </div>
-            <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+            <h3 className="text-xl font-bold text-foreground uppercase">
               Education
             </h3>
           </div>

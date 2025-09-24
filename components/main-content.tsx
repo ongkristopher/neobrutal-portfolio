@@ -3,16 +3,16 @@
 import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { About } from "@/components/about"
-// import { Projects } from "@/components/projects"
+import { Projects } from "@/components/projects"
 // import { Skills } from "@/components/skills"
 // import { Contact } from "@/components/contact"
 import { Resume } from "@/components/resume"
 
 const tabs = [
   { id: "about", label: "ABOUT", component: About },
-  // { id: "projects", label: "PORTFOLIO", component: Projects },
   // { id: "skills", label: "SKILLS", component: Skills },
   { id: "resume", label: "RESUME", component: Resume },
+  { id: "projects", label: "PORTFOLIO", component: Projects },
   // { id: "contact", label: "CONTACT", component: Contact },
 ]
 

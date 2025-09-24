@@ -34,7 +34,7 @@ export function Sidebar() {
   return (
     <>
       <div className="lg:hidden rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow m-4 p-4 flex justify-between items-center">
-        <h1 className="text-lg font-bold text-card-foreground uppercase tracking-wide">
+        <h1 className="text-lg font-bold text-card-foreground uppercase">
           {name}
         </h1>
         <Button
@@ -66,7 +66,7 @@ export function Sidebar() {
               className="w-full h-full object-cover"
             />
           </div>
-          <h1 className="hidden lg:block text-2xl font-bold text-card-foreground mb-2 uppercase tracking-wide">
+          <h1 className="hidden lg:block text-2xl font-bold text-card-foreground mb-2 uppercase">
             {name}
           </h1>
           <Badge className="uppercase" variant="neutral">
@@ -80,7 +80,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <CalendarDays className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase">
                 Years of experience
               </p>
               <p className="text-xs lg:text-sm font-medium">{experience}</p>
@@ -90,7 +90,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <Layers className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase">
                 Current Tech Stack
               </p>
               <p className="text-xs lg:text-sm font-medium">
@@ -102,7 +102,7 @@ export function Sidebar() {
           <div className="bg-background flex items-center gap-3 p-2 lg:p-3 rounded-base text-main-foreground border-2 border-border shadow-shadow">
             <MapPin className="w-4 h-4 lg:w-5 lg:h-5 text-accent" />
             <div>
-              <p className="font-bold text-xs text-muted-foreground uppercase tracking-wide">
+              <p className="font-bold text-xs text-muted-foreground uppercase">
                 LOCATION
               </p>
               <p className="text-xs lg:text-sm font-medium">{location}</p>

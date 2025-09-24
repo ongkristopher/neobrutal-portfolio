@@ -5,7 +5,7 @@ import { Card, CardContent } from "./ui/card";
 export function About() {
   return (
     <div>
-      <h2 className="text-4xl font-bold text-card-foreground mb-8 uppercase tracking-wide">
+      <h2 className="text-4xl font-bold text-card-foreground mb-8 uppercase">
         About Me
       </h2>
 
@@ -27,7 +27,7 @@ export function About() {
               <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
                 <Wrench className="h-4 w-4 text-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+              <h3 className="text-xl font-bold text-foreground uppercase">
                 What I'm Doing
               </h3>
             </div>
@@ -74,7 +74,7 @@ export function About() {
               <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
                 <Megaphone className="h-4 w-4 text-foreground" />
               </div>
-              <h3 className="text-xl font-bold text-foreground uppercase tracking-wide">
+              <h3 className="text-xl font-bold text-foreground uppercase">
                 Testimonials
               </h3>
             </div>
