@@ -61,7 +61,7 @@ export function Sidebar() {
         <div className="text-center mb-6 lg:mb-8">
           <div className="w-24 h-24 lg:w-32 lg:h-32 mx-auto mb-4 rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow overflow-hidden bg-muted">
             <img
-              src="/ongkristopher.png"
+              src="/ongkristopher.webp"
               alt="Profile"
               className="w-full h-full object-cover"
             />
