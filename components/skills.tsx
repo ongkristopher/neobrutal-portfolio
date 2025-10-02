@@ -172,7 +172,7 @@ export function Skills() {
         </div>
 
         {/* Dynamic categories */}
-        <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-6 mb-6">
+        {/* <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-6 mb-6">
           <div className="flex items-center gap-3 mb-6 z-10 relative">
             <div className="w-8 h-8 rounded bg-background border-2 border-border flex items-center justify-center">
               <LibraryBig className="h-4 w-4 text-foreground" />
@@ -182,23 +182,25 @@ export function Skills() {
             </h3>
           </div>
 
-          {skillsCategories.map((category) => (
-            <div key={category.title} className="mb-6">
-              <h3 className="text-lg font-bold text-foreground uppercase mb-3">
-                {category.title}
-              </h3>
-              <Card>
-                <CardContent>
-                  <div className="flex flex-wrap justify-evenly items-center gap-3">
-                    {category.items.map((skill) => (
-                      <SkillItem key={skill.name} {...skill} />
-                    ))}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          ))}
-        </div>
+          
+        </div> */}
+
+        {skillsCategories.map((category) => (
+          <div key={category.title} className="mb-6">
+            <h3 className="text-lg font-bold text-foreground uppercase mb-3">
+              {category.title}
+            </h3>
+            <Card>
+              <CardContent>
+                <div className="flex flex-wrap justify-evenly items-center gap-3">
+                  {category.items.map((skill) => (
+                    <SkillItem key={skill.name} {...skill} />
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+        ))}
 
         {/* <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-6 mb-6">
         <div className="flex items-center gap-3 mb-6 z-10 relative">
