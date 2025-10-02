@@ -54,3 +54,5 @@ export { CursorDark } from "./cursorDark";
 export { CursorWordmarkLight } from "./cursorWordmarkLight";
 export { CursorWordmarkDark } from "./cursorWordmarkDark";
 export { NxLight } from "./nxLight";
+export { Figma } from "./figma";
+export { AdobeXd } from "./adobeXd";

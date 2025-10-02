@@ -3,7 +3,7 @@ import {
   SiWebpack
 } from "@icons-pack/react-simple-icons";
 import { FileQuestion } from "lucide-react";
-import { Angular, CssOld, CursorLight, Daisyui, Directus, Django, Docker, Eslint, Expressjs, Git, GithubLight, Gitlab, Html5, Javascript, Jest, Mysql, N8n, NextjsIconDark, Nodejs, Npm, NxLight, Php, Postgresql, Postman, PrettierIconLight, Python, ReactLight, Tailwindcss, Typescript, Vercel, Vitejs, Wordpress, Zod } from "@/components/ui/svgs";
+import { AdobeXd, Angular, CssOld, CursorLight, Daisyui, Directus, Django, Docker, Eslint, Expressjs, Figma, Git, GithubLight, Gitlab, Html5, Javascript, Jest, Mysql, N8n, NextjsIconDark, Nodejs, Npm, NxLight, Php, Postgresql, Postman, PrettierIconLight, Python, ReactLight, Tailwindcss, Typescript, Vercel, Vitejs, Wordpress, Zod } from "@/components/ui/svgs";
 
 export const skillsCategories = [
   {
@@ -79,6 +79,13 @@ export const skillsCategories = [
       { name: "n8n", icon: N8n, rating: 1 },
       { name: "ChatGPT", icon: FileQuestion, rating: 5 },
       { name: "Cursor IDE", icon: CursorLight, rating: 5 },
+    ],
+  },
+  {
+    title: "Design Tools",
+    items: [
+      { name: "Figma", icon: Figma, rating: 5 },
+      { name: "Adobe XD", icon: AdobeXd, rating: 4 },
     ],
   },
 ];
