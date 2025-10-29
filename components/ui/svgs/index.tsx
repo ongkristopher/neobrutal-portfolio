@@ -56,3 +56,5 @@ export { CursorWordmarkDark } from "./cursorWordmarkDark";
 export { NxLight } from "./nxLight";
 export { Figma } from "./figma";
 export { AdobeXd } from "./adobeXd";
+export { Openai } from "./openai";
+export { Graphql } from "./graphql";

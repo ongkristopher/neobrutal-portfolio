@@ -6,6 +6,7 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 
 export function Sidebar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -60,9 +61,11 @@ export function Sidebar() {
         {/* Profile Section */}
         <div className="text-center mb-6 lg:mb-8">
           <div className="w-24 h-24 lg:w-32 lg:h-32 mx-auto mb-4 rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow overflow-hidden bg-muted">
-            <img
+            <Image
               src="/ongkristopher.webp"
-              alt="Profile"
+              alt="Kristopher's Profile Photo"
+              width="128"
+              height="128"
               className="w-full h-full object-cover"
             />
           </div>
@@ -112,22 +115,24 @@ export function Sidebar() {
 
         {/* Social Links */}
         <div className="flex gap-2 justify-center">
-          <Link
+          <a
             href="https://github.com/ongkristopher"
             target="_blank"
+            name="github link"
             rel="noopener noreferrer"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
             <SiGithub className="w-4 h-4" />
-          </Link>
-          <Link
+          </a>
+          <a
             href="https://linkedin.com/in/ongkristopher"
             target="_blank"
             rel="noopener noreferrer"
+            name="linkedin link"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
             <Linkedin className="w-4 h-4" />
-          </Link>
+          </a>
         </div>
       </aside>
     </>

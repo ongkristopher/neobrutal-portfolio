@@ -47,9 +47,7 @@ export function MainContent() {
         </nav>
 
         {/* Content */}
-        <div className="animate-in fade-in-50 duration-900">
-          <ActiveComponent />
-        </div>
+        <ActiveComponent />
       </div>
     </main>
   );

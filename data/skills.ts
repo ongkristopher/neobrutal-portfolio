@@ -2,8 +2,7 @@ import {
   SiReacthookform,
   SiWebpack
 } from "@icons-pack/react-simple-icons";
-import { FileQuestion } from "lucide-react";
-import { AdobeXd, Angular, CssOld, CursorLight, Daisyui, Directus, Django, Docker, Eslint, Expressjs, Figma, Git, GithubLight, Gitlab, Html5, Javascript, Jest, Mysql, N8n, NextjsIconDark, Nodejs, Npm, NxLight, Php, Postgresql, Postman, PrettierIconLight, Python, ReactLight, Tailwindcss, Typescript, Vercel, Vitejs, Wordpress, Zod } from "@/components/ui/svgs";
+import { AdobeXd, Angular, CssOld, CursorLight, Daisyui, Directus, Django, Docker, Eslint, Expressjs, Figma, Git, GithubLight, Gitlab, Graphql, Html5, Javascript, Jest, Mysql, N8n, NextjsIconDark, Nodejs, Npm, NxLight, Openai, Php, Postgresql, Postman, PrettierIconLight, Python, ReactLight, Tailwindcss, Typescript, Vercel, Vitejs, Wordpress, Zod } from "@/components/ui/svgs";
 
 export const skillsCategories = [
   {
@@ -64,6 +63,7 @@ export const skillsCategories = [
       { name: "Django", icon: Django, rating: 4 },
       { name: "PostgreSQL", icon: Postgresql, rating: 2 },
       { name: "MySQL", icon: Mysql, rating: 7 },
+      { name: "GraphQL", icon: Graphql, rating: 4 },
     ],
   },
   {
@@ -77,7 +77,7 @@ export const skillsCategories = [
     title: "Automation & AI Tools",
     items: [
       { name: "n8n", icon: N8n, rating: 1 },
-      { name: "ChatGPT", icon: FileQuestion, rating: 5 },
+      { name: "ChatGPT", icon: Openai, rating: 5 },
       { name: "Cursor IDE", icon: CursorLight, rating: 5 },
     ],
   },
