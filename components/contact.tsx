@@ -1,15 +1,12 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
-
 const CALENDLY_URL = "https://calendly.com/ongkristopher/30min";
 
 export function Contact() {
-  const headerRef = useRef<HTMLDivElement>(null);
 
   return (
-    <div>
-      <div ref={headerRef}>
+    <>
+      <div>
         <h2 className="text-4xl font-bold text-card-foreground mb-2 uppercase">
           Contact
         </h2>
@@ -27,6 +24,6 @@ export function Contact() {
           title="Schedule a meeting with Kristopher Ong"
         />
       </div>
-    </div>
+    </>
   );
 }
