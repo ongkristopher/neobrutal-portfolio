@@ -1,3 +1,43 @@
+export const speakingEngagements = [
+  {
+    title: "Getting Started with Programming: Essential Pointers for Beginners",
+    venue: "University of Santo Tomas",
+    date: "April 20, 2024",
+    image: "/speakership-ust-2024.webp",
+    highlights: [
+      "Introduction to Programming",
+      "Choosing your First Language",
+      "Understanding Your First Language",
+      "Setting Up Your Development Environment",
+      "Learning Resources",
+      "Best Practices for Beginners",
+      "Common Challenges for Beginners",
+      "Building Your Portfolio",
+      "Demonstrated how to deploy a Next.js project to Vercel",
+    ],
+  },
+  {
+    title: "Javascript — Front-end and Back-end",
+    venue: "Norzagaray College",
+    date: "January 18, 2020",
+    image: "/speakership-norzagaray-college-2020.webp",
+    highlights: [
+      "Taught attendees to use JavaScript for front-end development",
+      "Taught attendees to use Node.js for back-end development",
+      "Assisted attendees to create a basic system using only JavaScript",
+    ],
+  },
+];
+
+export const education = [
+  {
+    school: "Norzagaray College",
+    degree: "Bachelor of Science in Computer Science",
+    location: "Norzagaray, Bulacan, Philippines",
+    duration: "May 2017",
+  },
+];
+
 export const experiences = [
   {
     company: "Arcanys",

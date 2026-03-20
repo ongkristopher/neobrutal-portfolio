@@ -1,31 +1,43 @@
 "use client"
 
-import { useState } from "react"
 import { Button } from "@/components/ui/button"
 import { About } from "@/components/about"
 import { Skills } from "@/components/skills"
-// import { Skills } from "@/components/skills"
-// import { Contact } from "@/components/contact"
 import { Resume } from "@/components/resume"
+import { Projects } from "@/components/projects"
+import { Speaking } from "@/components/speaking"
+import { Contact } from "@/components/contact"
 
 const tabs = [
   { id: "about", label: "ABOUT", component: About },
-  // { id: "skills", label: "SKILLS", component: Skills },
   { id: "resume", label: "RESUME", component: Resume },
-  { id: "projects", label: "SKILLS", component: Skills },
-  // { id: "contact", label: "CONTACT", component: Contact },
+  { id: "skills", label: "SKILLS", component: Skills },
+  { id: "projects", label: "PROJECTS", component: Projects },
+  { id: "speaking", label: "SPEAKERSHIP", component: Speaking },
 ]
 
-export function MainContent() {
-  const [activeTab, setActiveTab] = useState("about")
+interface MainContentProps {
+  activeTab: string
+  setActiveTab: (tab: string) => void
+}
 
-  const ActiveComponent = tabs.find((tab) => tab.id === activeTab)?.component || About
+export function MainContent({ activeTab, setActiveTab }: MainContentProps) {
+  const allComponents: Record<string, React.ComponentType> = {
+    about: About,
+    resume: Resume,
+    skills: Skills,
+    projects: Projects,
+    speaking: Speaking,
+    contact: Contact,
+  }
+
+  const ActiveComponent = allComponents[activeTab] || About
 
   return (
     <main className="flex-1 p-4">
       <div className="rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-4 lg:p-8 min-h-[calc(100vh-2rem)]">
         {/* Tab Navigation */}
-        <nav className="flex gap-1 lg:gap-2 mb-6 lg:mb-8 overflow-x-auto pb-2">
+        <nav className="flex flex-wrap gap-1 lg:gap-2 mb-6 lg:mb-8">
           {tabs.map((tab) => (
             <Button
               key={tab.id}

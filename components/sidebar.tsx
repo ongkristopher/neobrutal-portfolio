@@ -1,14 +1,18 @@
 "use client"
 
 import { useState } from "react"
-import { MapPin, Menu, X, Linkedin , CalendarDays, Layers, Globe} from "lucide-react"
+import { MapPin, Menu, X, Linkedin, CalendarDays, Layers, Globe, CalendarCheck } from "lucide-react"
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 
-export function Sidebar() {
+interface SidebarProps {
+  onContactClick: () => void
+}
+
+export function Sidebar({ onContactClick }: SidebarProps) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const startDate = new Date("2017-05-08");
   const currentDate = new Date();
@@ -38,18 +42,29 @@ export function Sidebar() {
         <h1 className="text-lg font-bold text-card-foreground uppercase">
           {name}
         </h1>
-        <Button
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          variant="default"
-          size="sm"
-          className="neo-border neo-shadow-sm"
-        >
-          {isMobileMenuOpen ? (
-            <X className="w-4 h-4" />
-          ) : (
-            <Menu className="w-4 h-4" />
-          )}
-        </Button>
+        <div className="flex items-center gap-2">
+          <Button
+            size="sm"
+            variant="neutral"
+            className="font-bold uppercase tracking-wider text-xs bg-background hover:bg-muted"
+            onClick={onContactClick}
+          >
+            <CalendarCheck className="w-3.5 h-3.5" />
+            Contact
+          </Button>
+          <Button
+            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            variant="default"
+            size="sm"
+            className="neo-border neo-shadow-sm"
+          >
+            {isMobileMenuOpen ? (
+              <X className="w-4 h-4" />
+            ) : (
+              <Menu className="w-4 h-4" />
+            )}
+          </Button>
+        </div>
       </div>
 
       <aside
@@ -114,11 +129,10 @@ export function Sidebar() {
         </div>
 
         {/* Social Links */}
-        <div className="flex gap-2 justify-center">
+        <div className="flex gap-2 justify-center mb-4">
           <a
             href="https://github.com/ongkristopher"
             target="_blank"
-            name="github link"
             rel="noopener noreferrer"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
@@ -128,12 +142,21 @@ export function Sidebar() {
             href="https://linkedin.com/in/ongkristopher"
             target="_blank"
             rel="noopener noreferrer"
-            name="linkedin link"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
             <Linkedin className="w-4 h-4" />
           </a>
         </div>
+
+        {/* Contact Button — hidden on mobile since it appears in the top bar */}
+        <Button
+          className="hidden lg:flex w-full font-bold uppercase tracking-wider text-xs bg-background hover:bg-muted"
+          variant="neutral"
+          onClick={onContactClick}
+        >
+          <CalendarCheck className="w-4 h-4" />
+          Book a Meeting
+        </Button>
       </aside>
     </>
   );
