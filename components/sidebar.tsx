@@ -1,44 +1,50 @@
 "use client"
 
 import { useState } from "react"
-import { MapPin, Menu, X, Linkedin, CalendarDays, Layers, Globe, CalendarCheck } from "lucide-react"
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import {
+  MapPin,
+  Menu,
+  X,
+  Linkedin,
+  CalendarDays,
+  Layers,
+  Globe,
+  CalendarCheck,
+} from "lucide-react"
+import { SiGithub } from "@icons-pack/react-simple-icons"
 import { Button } from "@/components/ui/button"
-import { Badge } from "@/components/ui/badge";
-import Link from "next/link";
-import Image from "next/image";
+import { Badge } from "@/components/ui/badge"
+import Link from "next/link"
+import Image from "next/image"
 
-interface SidebarProps {
-  onContactClick: () => void
-}
+export function Sidebar() {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
 
-export function Sidebar({ onContactClick }: SidebarProps) {
-  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const startDate = new Date("2017-05-08");
-  const currentDate = new Date();
+  const startDate = new Date("2017-05-08")
+  const currentDate = new Date()
 
-  let years = currentDate.getFullYear() - startDate.getFullYear();
-  let months = currentDate.getMonth() - startDate.getMonth();
+  let years = currentDate.getFullYear() - startDate.getFullYear()
+  let months = currentDate.getMonth() - startDate.getMonth()
 
   if (
     months < 0 ||
     (months === 0 && currentDate.getDate() < startDate.getDate())
   ) {
-    years--;
-    months += 12;
+    years--
+    months += 12
   }
 
   const experience = `${years} year${years !== 1 ? "s" : ""} ${months} month${
     months !== 1 ? "s" : ""
-    }`;
-  const name = "Kristopher Ong";
-  const position = "Web Developer";
-  const currentStack = ['Angular', "Next.js"];
-  const location = "Norzagaray, Bulacan, Philippines";
+  }`
+  const name = "Kristopher Ong"
+  const position = "Web Developer"
+  const currentStack = ["Angular", "Next.js"]
+  const location = "Norzagaray, Bulacan, Philippines"
 
   return (
     <>
-      <div className="lg:hidden rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow m-4 p-4 flex justify-between items-center">
+      <div className="relative z-10 lg:hidden rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow m-4 p-4 flex justify-between items-center">
         <h1 className="text-lg font-bold text-card-foreground uppercase">
           {name}
         </h1>
@@ -47,10 +53,12 @@ export function Sidebar({ onContactClick }: SidebarProps) {
             size="sm"
             variant="neutral"
             className="font-bold uppercase tracking-wider text-xs bg-background hover:bg-muted"
-            onClick={onContactClick}
+            asChild
           >
-            <CalendarCheck className="w-3.5 h-3.5" />
-            Contact
+            <Link href="/contact">
+              <CalendarCheck className="w-3.5 h-3.5" />
+              Contact
+            </Link>
           </Button>
           <Button
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -69,7 +77,7 @@ export function Sidebar({ onContactClick }: SidebarProps) {
 
       <aside
         className={`
-        lg:w-80 rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-4 lg:p-8 m-4 h-fit lg:sticky lg:top-4
+        relative z-10 lg:w-80 rounded-base text-main-foreground border-2 border-border bg-main shadow-shadow p-4 lg:p-8 m-4 h-fit lg:sticky lg:top-4
         ${isMobileMenuOpen ? "block" : "hidden lg:block"}
       `}
       >
@@ -79,8 +87,8 @@ export function Sidebar({ onContactClick }: SidebarProps) {
             <Image
               src="/ongkristopher.webp"
               alt="Kristopher's Profile Photo"
-              width="128"
-              height="128"
+              width={128}
+              height={128}
               className="w-full h-full object-cover"
             />
           </div>
@@ -152,12 +160,14 @@ export function Sidebar({ onContactClick }: SidebarProps) {
         <Button
           className="hidden lg:flex w-full font-bold uppercase tracking-wider text-xs bg-background hover:bg-muted"
           variant="neutral"
-          onClick={onContactClick}
+          asChild
         >
-          <CalendarCheck className="w-4 h-4" />
-          Book a Meeting
+          <Link href="/contact">
+            <CalendarCheck className="w-4 h-4" />
+            Book a Meeting
+          </Link>
         </Button>
       </aside>
     </>
-  );
+  )
 }
