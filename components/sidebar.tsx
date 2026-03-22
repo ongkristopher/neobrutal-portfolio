@@ -142,6 +142,7 @@ export function Sidebar() {
             href="https://github.com/ongkristopher"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Kristopher's GitHub profile"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
             <SiGithub className="w-4 h-4" />
@@ -150,6 +151,7 @@ export function Sidebar() {
             href="https://linkedin.com/in/ongkristopher"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Kristopher's LinkedIn profile"
             className="bg-background p-2 rounded-base border border-border shadow-shadow hover:opacity-80 transition"
           >
             <Linkedin className="w-4 h-4" />
