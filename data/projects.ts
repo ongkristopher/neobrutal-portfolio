@@ -10,6 +10,16 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    title: "MahFrend",
+    type: "Side Project",
+    description:
+      "Web application that manages loans from your family and friends.",
+    tech: ["Next.js", "React", "Tailwind CSS", "Supabase", "Postgres"],
+    role: "Fullstack Developer",
+    liveUrl: "https://mahfrend.vercel.app/",
+    githubUrl: "https://github.com/ongkristopher/MahFrend"
+  },
+  {
     title: "Jerome AI Web Application",
     type: "Side Project",
     description:

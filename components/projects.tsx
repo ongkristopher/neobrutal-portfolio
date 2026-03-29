@@ -19,7 +19,10 @@ import {
   ReactLight,
   Tailwindcss,
   Typescript,
+  Postgresql,
+  Supabase,
 } from "@/components/ui/svgs";
+import { SiAxios, SiMaterialdesign, SiRedux } from "@icons-pack/react-simple-icons";
 
 type IconComponent = React.ComponentType<React.SVGProps<SVGSVGElement>>;
 
@@ -38,6 +41,11 @@ const techIconMap: Record<string, IconComponent> = {
   "React": ReactLight,
   "Tailwind CSS": Tailwindcss,
   "TypeScript": Typescript,
+  "Postgres": Postgresql,
+  "Supabase": Supabase,
+  "Redux": SiRedux,
+  "Axios": SiAxios,
+  "Material UI": SiMaterialdesign
 };
 
 const typeColors: Record<string, string> = {

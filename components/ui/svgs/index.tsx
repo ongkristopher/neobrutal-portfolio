@@ -58,3 +58,4 @@ export { Figma } from "./figma";
 export { AdobeXd } from "./adobeXd";
 export { Openai } from "./openai";
 export { Graphql } from "./graphql";
+export { Supabase } from "./supabase";
