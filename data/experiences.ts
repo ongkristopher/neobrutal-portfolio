@@ -65,7 +65,7 @@ export const experiences = [
   },
   {
     company: "Forthmedia Interactive Development",
-    duration: "May 2017 - November 2021",
+    duration: "May 2017 - November 2017",
     position: "Junior Web Developer",
     tasks: [
       "Developed and maintained existing web pages develop in different front-end solution architecture (Web forms, MVC, Bootstrap, jQuery)",
